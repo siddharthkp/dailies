@@ -1,0 +1,14 @@
+{
+  "name": "dailies",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run unit && npm run push-coverage",
+    "unit": "jest --coverage",
+    "push-coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "coveralls": "3.0.0",
+    "jest": "22.4.2"
+  }
+}
